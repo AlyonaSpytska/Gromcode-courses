@@ -1,5 +1,4 @@
 html {
-  box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #555;
   font-size: 16px;
@@ -7,12 +6,13 @@ html {
 
 html,
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 body {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .header {
@@ -47,14 +47,15 @@ body {
 
 .nav-list-item {
   list-style: none;
-  background-color: #808080;
   margin-bottom: 0.5em;
-  padding-left: 0.5em;
+  height: 2em;
+  background-color: #808080;
 }
 
 .nav-list-link {
   display: block;
   line-height: 2em;
+  padding: 0 0.5em;
   color: #fff;
   text-decoration: none;
   overflow: hidden;
