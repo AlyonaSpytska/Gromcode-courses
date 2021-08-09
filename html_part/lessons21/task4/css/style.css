@@ -22,7 +22,7 @@ body {
 
 .header > h1 {
   text-align: center;
-  color: #fff; 
+  color: #fff;
 }
 
 .main {
@@ -43,22 +43,21 @@ body {
 
 .nav-list {
   padding: 0;
+  margin-left: -1px;
 }
 
 .nav-list-item {
-  height: 2em;
+  width: 100%;
+  max-width: 215px;
   list-style: none;
   background-color: #808080;
-}
-
-.nav-list-item:not(:last-child) {
   margin-bottom: 0.5em;
+  padding-left: 0.5em;
 }
 
 .nav-list-link {
-  height: 100%;
   display: block;
-  padding-left: 0.5em;
+  margin: -3px 0 0 -2px;
   line-height: 2em;
   color: #fff;
   text-decoration: none;
@@ -70,6 +69,7 @@ body {
 .section {
   width: 60%;
   font-size: 1.25em;
+  margin-left: -8px;
 }
 
 .section__header {
