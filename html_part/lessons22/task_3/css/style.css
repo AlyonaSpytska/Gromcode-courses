@@ -1,0 +1,12 @@
+main {
+  display: flex;
+  align-items: center;
+}
+
+picture {
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+}
