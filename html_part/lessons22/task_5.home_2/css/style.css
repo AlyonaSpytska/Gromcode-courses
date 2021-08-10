@@ -112,9 +112,16 @@ img {
     flex-wrap: wrap;
   }
 
-  .navigation,
+  .navigation {
+    width: 20%;
+  }
+
+  .section {
+    width: 80%;
+  }
+
   .news {
-    width: auto;
+    width: 100%;
   }
 }
 
