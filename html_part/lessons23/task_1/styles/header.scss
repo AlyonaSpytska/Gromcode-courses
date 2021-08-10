@@ -16,11 +16,11 @@
 
   &__item {
     background-color: $color-secondary;
-    margin-left: $unit * 2;
+    margin-left: $unit;
     padding: $unit;
     border-radius: $border-radius;
     cursor: pointer;
-    
+
     &_selected {
       background-color: $color-primary;
     }
