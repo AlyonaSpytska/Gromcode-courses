@@ -31,7 +31,6 @@ body {
 .main {
   flex: 1 0 auto;
   display: flex;
-  justify-content: space-between;
 }
 
 .navigation,
@@ -42,7 +41,7 @@ body {
 
 .navigation,
 .news {
-  width: 19%;
+  width: 20%;
 }
 
 .nav-list {
