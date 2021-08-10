@@ -41,6 +41,7 @@ htmk {
 .nav-list-item {
   background-color: #808080;
   height: 2em;
+  margin-bottom: 0.5em;
 }
 
 .nav-list-link {
