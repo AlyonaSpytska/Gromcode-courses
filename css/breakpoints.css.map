@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AA6BA,MAAM,CAAC,MAAM,MAAM,WAAW,EAAE,QAAQ;EACtC,AAAA,UAAU,CAAC;IACT,cAAc,EAAE,MAAM;GACvB",
+    "sources": [
+        "../html_part/lessons23/task_2/styles/breakpoints.scss"
+    ],
+    "names": [],
+    "file": "breakpoints.css"
+}

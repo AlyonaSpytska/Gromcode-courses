@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../html_part/lessons23/task_2/styles/variables.scss"
+    ],
+    "names": [],
+    "file": "variables.css"
+}

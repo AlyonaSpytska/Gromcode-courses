@@ -1,18 +1,16 @@
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   height: 100vh;
 }
 
@@ -22,28 +20,25 @@
   margin: 8px;
   background-color: #ff7f50;
 }
-
 @media screen and (max-width: 600px) {
   .square {
     background-color: #ff7f50;
   }
 }
-
 @media screen and (min-width: 600px) {
   .square {
     background-color: #8a2be2;
   }
 }
-
 @media screen and (min-width: 900px) {
   .square {
     background-color: #a61;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .square {
     background-color: #c47;
   }
 }
-/*# sourceMappingURL=index.css.map */
+
+/*# sourceMappingURL=styles.css.map */

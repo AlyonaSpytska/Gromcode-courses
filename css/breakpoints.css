@@ -1,0 +1,9 @@
+@media screen and (orientation: portrait) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=breakpoints.css.map */
