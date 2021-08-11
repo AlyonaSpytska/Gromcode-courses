@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../html_part/lessons23/task_4/styles/layout.scss"
+    ],
+    "names": [],
+    "file": "layout.css"
+}
