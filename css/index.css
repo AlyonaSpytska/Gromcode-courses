@@ -1,10 +1,6 @@
-span {
-  font-family: Verdana;
-  margin: auto;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: #faebd7;
-  text-transform: lowercase;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .container {
@@ -17,7 +13,7 @@ span {
           flex-direction: column;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -99,5 +95,14 @@ span {
         -ms-flex: 1;
             flex: 1;
   }
+}
+
+span {
+  font-family: Verdana;
+  margin: auto;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #faebd7;
+  text-transform: lowercase;
 }
 /*# sourceMappingURL=index.css.map */

@@ -1,17 +1,12 @@
-span {
-  font-family: Verdana;
-  margin: auto;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: #faebd7;
-  text-transform: lowercase;
+* {
+  box-sizing: border-box;
 }
 
 .container {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 900px) {
   .container {
     flex-direction: row;
   }
@@ -63,6 +58,15 @@ span {
   .news {
     flex: 1;
   }
+}
+
+span {
+  font-family: Verdana;
+  margin: auto;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #faebd7;
+  text-transform: lowercase;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,19 +1,14 @@
 @import "layout.scss";
 
-span {
-  font-family: Verdana;
-  margin: auto;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: #faebd7;
-  text-transform: lowercase;
+* {
+  box-sizing: border-box;
 }
 
 .container {
   display: flex;
   flex-direction: column;
 
-  @include for-small {
+  @include for-medium {
     flex-direction: row;
   }
 }
@@ -59,4 +54,13 @@ span {
   @include for-medium {
     flex: 1;
   }
+}
+
+span {
+  font-family: Verdana;
+  margin: auto;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #faebd7;
+  text-transform: lowercase;
 }
