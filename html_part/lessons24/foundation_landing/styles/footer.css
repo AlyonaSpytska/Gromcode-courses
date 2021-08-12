@@ -1,0 +1,96 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+.footer__top {
+  display: flex;
+  min-height: 338px;
+  padding: 35px 0 50px;
+}
+
+.footer__about {
+  margin-right: 126px;
+}
+
+.footer__description {
+  width: 100%;
+  max-width: 360px;
+  margin: 26px 0 25px;
+  line-height: 26px;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+.footer__images:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__additional-nav {
+  display: flex;
+}
+
+.footer__column {
+  width: 265px;
+}
+
+.footer__column:not(:last-child) {
+  margin-right: 29px;
+}
+
+.footer__title {
+  margin: 16px 0;
+}
+
+.footer__list {
+  padding: 0;
+  list-style: none;
+}
+
+.footer__element {
+  margin-bottom: 19px;
+}
+
+.footer__item {
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+.footer__line {
+  width: 100%;
+  margin: 0;
+  border: 1px solid #2b292d;
+  opacity: 0.1;
+}
+
+.footer__bottom {
+  line-height: 50px;
+}
+
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.footer__link {
+  margin: 13px 0 15px;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+  color: rgba(43, 41, 45, 0.6);
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__icon {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.footer__icon:not(:last-child) {
+  margin-right: 20px;
+}

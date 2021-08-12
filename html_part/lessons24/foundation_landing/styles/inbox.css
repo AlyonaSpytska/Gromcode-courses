@@ -1,0 +1,45 @@
+.inbox {
+    padding: 115px 0 87px;
+    background: #fcf0e3;
+}
+
+.inbox__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inbox__img {
+    margin: 13px 31px;
+    text-align: center;
+}
+
+.inbox__img>p {
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+}
+
+.inbox__part-text {
+    width: 100%;
+    max-width: 462px;
+}
+
+.inbox__uptitle {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #f1592b;
+}
+
+.inbox__title {
+    margin: 24px 0 30px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+}
+
+.inbox__text {
+    font-size: 24px;
+    line-height: 34px;
+}
