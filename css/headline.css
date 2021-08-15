@@ -1,6 +1,11 @@
 .headline {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   padding-bottom: 36px;
 }
@@ -11,6 +16,7 @@
 
 .headline__img {
   width: 100%;
+  max-width: 400px;
 }
 
 .headline__title {
@@ -36,9 +42,16 @@
 }
 
 .headline__wrapper-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 33px;
 }
 
@@ -62,8 +75,10 @@
     top: 7px;
   }
   .headline__title {
+    position: relative;
     max-width: 754px;
     min-height: 165px;
+    margin-left: -4px;
     font-size: 80px;
     line-height: 78px;
     letter-spacing: -0.5px;
@@ -76,8 +91,13 @@
     z-index: 1;
   }
   .headline__wrapper-btn {
-    flex-direction: row;
-    align-items: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: left;
+        -ms-flex-align: left;
+            align-items: left;
     margin-bottom: 126px;
   }
   .headline__wrapper-btn > button:not(:last-child) {
@@ -93,3 +113,4 @@
     z-index: 0;
   }
 }
+/*# sourceMappingURL=headline.css.map */

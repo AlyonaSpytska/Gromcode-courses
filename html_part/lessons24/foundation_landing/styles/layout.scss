@@ -1,0 +1,7 @@
+$desc: 400px;
+
+@mixin desctop {
+  @media (min-width: $desc){
+    @content;
+  }
+}

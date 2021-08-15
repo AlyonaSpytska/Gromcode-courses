@@ -4,8 +4,12 @@
 }
 
 .inbox__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .inbox__img {
@@ -43,3 +47,4 @@
   font-size: 24px;
   line-height: 34px;
 }
+/*# sourceMappingURL=inbox.css.map */

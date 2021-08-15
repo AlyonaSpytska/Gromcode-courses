@@ -1,0 +1,89 @@
+.customers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.customers__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.customers__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 94px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.customers__item:last-child {
+  border-right: none;
+}
+
+.customers__img {
+  max-width: 80%;
+  -webkit-filter: brightness(0);
+          filter: brightness(0);
+}
+
+@media screen and (min-width: 400px) {
+  .customers {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 20px 0 106px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .customers__item {
+    border: none;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  .customers__row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .customers__img_forbes {
+    margin-left: 20px;
+  }
+  .customers__img_apple {
+    margin-left: 45px;
+  }
+  .customers__img_mash {
+    margin-left: 4px;
+  }
+  .customers__img_wsj {
+    margin-left: 72px;
+  }
+  .customers__img_google {
+    margin-left: auto;
+  }
+}
+/*# sourceMappingURL=customers.css.map */

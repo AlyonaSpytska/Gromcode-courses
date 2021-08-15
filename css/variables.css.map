@@ -2,7 +2,7 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "../html_part/lessons23/task_2/styles/variables.scss"
+        "../html_part/lessons24/foundation_landing/styles/variables.scss"
     ],
     "names": [],
     "file": "variables.css"

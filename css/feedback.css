@@ -1,0 +1,42 @@
+.feedback {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 39px 15px 50px;
+}
+
+.feedback__uptitle {
+  margin-bottom: 29px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: blue;
+}
+
+.feedback__text {
+  margin-bottom: 32px;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.feedback__client {
+  margin-bottom: 40px;
+}
+
+.feedback__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feedback__dots > div {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+}
+
+.feedback__img {
+  margin: 40px auto 0;
+}
+/*# sourceMappingURL=feedback.css.map */

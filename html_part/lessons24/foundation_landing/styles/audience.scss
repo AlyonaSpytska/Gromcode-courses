@@ -1,0 +1,131 @@
+.audience {
+  padding: 54px 15px;
+  background-color: rgba(0, 161, 198, 0.1);
+
+  @include desctop {
+    padding: 108px 0 110px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin: 17px 0 18px;
+
+    @include desctop {
+      width: 100%;
+      max-width: 455px;
+      margin: 23px 0 31px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+
+    @include desctop {
+      width: 100%;
+      max-width: 555px;
+      margin-bottom: 38px;
+    }
+  }
+
+  &__wrapper-btn {
+    margin-bottom: 40px;
+
+    @include desctop {
+      display: flex;
+    }
+  }
+
+  &__button {
+    width: 290px;
+    margin-bottom: 10px;
+
+    @include desctop {
+      width: auto;
+      margin-bottom: 40px;
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: column;
+
+    @include desctop {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+
+  &__option {
+    position: relative;
+    width: 100%;
+    max-width: 290px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: $white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
+      inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+
+    @include desctop {
+      max-width: 262px;
+      height: 300px;
+      margin: 0;
+    }
+
+    &_active {
+      background-color: #3141c5;
+      color: $white;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @include desctop {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover {
+      background-color: $blue;
+      cursor: pointer;
+
+      .audience__profession {
+        color: $white;
+      }
+    }
+  }
+
+  &__card-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+
+  &__image {
+    max-width: 138px;
+    margin: auto;
+  }
+
+  &__profession {
+    margin: 22px 0 33px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}

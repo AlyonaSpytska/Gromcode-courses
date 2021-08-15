@@ -1,9 +1,32 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
 }
 
-.container {
+.navigation__title {
+  margin: 0 auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 36px;
+  letter-spacing: 3.6px;
+  color: #030303;
+}
+
+.navigation__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px auto;
+}
+
+.navigation__filter, .navigation__sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,12 +36,37 @@
           flex-direction: column;
 }
 
-@media screen and (min-width: 900px) {
-  .container {
+.navigation__sort {
+  margin-left: 30px;
+}
+
+.navigation__label {
+  font-size: .75em;
+  font-weight: 700;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.navigation__select {
+  width: 100px;
+  margin-top: 10px;
+  margin-left: -5px;
+  font-weight: 600;
+  color: #333;
+  border: 0;
+  line-height: 1.375;
+  background-color: #f7f7f7;
+}
+
+@media (min-width: 750px) {
+  .navigation {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .navigation__search {
+    margin: 0;
   }
 }
 
@@ -26,83 +74,88 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 50%;
+          flex: 0 50%;
+  position: relative;
+  padding-bottom: 25px;
+  background-color: #fff;
+  border: 1px solid #f7f7f7;
 }
 
-@media screen and (min-width: 600px) {
-  .products {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
+.product__sale {
+  position: absolute;
+  padding: 4px 10px;
+  font-size: 0.75em;
+  font-weight: 700;
+  color: #fff;
+  background-color: #006eff;
 }
 
-@media screen and (min-width: 900px) {
-  .products {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
-  }
+.product__img img {
+  width: 100%;
+  padding: 50px 25px;
 }
 
-.products-list {
+.product__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 200px;
-  background-color: #006400;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
-@media screen and (min-width: 600px) {
-  .products-list {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+.product__name {
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+
+.product__price {
+  margin: 0;
+  font-size: 0.875em;
+  color: #666;
+}
+
+@media (min-width: 750px) {
+  .product {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 25%;
+            flex: 0 25%;
   }
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 200px;
-  background-color: #ff7f50;
-}
-
-@media screen and (min-width: 600px) {
-  .navigation {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+@media (min-width: 1200px) {
+  .product {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 20%;
+            flex: 0 20%;
   }
 }
 
-.news {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  min-height: 200px;
-  background-color: #0ff;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-@media screen and (min-width: 900px) {
-  .news {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-}
-
-span {
-  font-family: Verdana;
-  margin: auto;
-  padding: 8px;
-  border-radius: 4px;
-  background-color: #faebd7;
-  text-transform: lowercase;
+body {
+  font-family: Karla, sans-serif;
+  background-color: #f7f7f7;
+  width: 90%;
+  margin: 30px auto;
 }
 /*# sourceMappingURL=index.css.map */

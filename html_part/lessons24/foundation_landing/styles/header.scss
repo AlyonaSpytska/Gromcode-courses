@@ -1,0 +1,115 @@
+.top-section {
+  background-color: $peach-color;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+  align-items: center;
+  background-color: $white;
+
+  @include desctop {
+    width: 1140px;
+    height: 62px;
+    margin: 39px auto 0;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  &__button {
+    display: none;
+
+    @include desctop {
+      display: block;
+      margin: -14px 0 0 56px;
+    }
+  }
+
+  &__burger {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    padding: 22px 20px;
+    border-left: 1px solid $more-grey-light;
+
+    @include desctop {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+
+  @include desctop {
+    margin-left: 0;
+  }
+
+  &__image {
+    width: 45px;
+    height: 45px;
+    margin-right: 13px;
+
+    @include desctop {
+      width: 60px;
+      height: 60px;
+      margin-right: 15px;
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 700;
+  }
+
+  &__description {
+    display: none;
+    line-height: 25px;
+    opacity: 0.6;
+
+    @include desctop {
+      display: block;
+    }
+  }
+}
+
+.nav {
+  display: none;
+
+  @include desctop {
+    display: block;
+    margin: -16px 0px 7px auto;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+
+  &__item {
+    margin-right: 50px;
+    text-decoration: none;
+    color: $more-grey;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__arrow {
+    margin-left: 11px;
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+    background-image: url("../images/main_page/arrow.png");
+  }
+
+  &__item_selected {
+    font-weight: 700;
+  }
+}

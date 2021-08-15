@@ -1,0 +1,100 @@
+.communication {
+  padding: 50px 15px;
+
+  @include desctop {
+    padding: 124px 0 116px;
+  }
+
+  &__top {
+    @include desctop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__part {
+    @include desctop {
+      width: 100%;
+      max-width: 461px;
+    }
+  }
+
+  &__uptitle {
+    color: #0189d1;
+  }
+
+  &__title {
+    margin: 17px 0 18px;
+
+    @include desctop {
+      margin: 25px 0 30px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 27px;
+
+    @include desctop {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__button {
+    width: 160px !important;
+    height: 48px;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 290px;
+    height: 291px;
+    margin-bottom: 14px;
+
+    @include desctop {
+      max-width: 425px;
+      min-height: 426px;
+      margin: 0 62px 0 0;
+    }
+  }
+
+  &__subimg {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: grey;
+
+    @include desctop {
+      margin-bottom: 68px;
+    }
+  }
+
+  &__bottom {
+    @include desctop {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__option {
+    padding-top: 35px;
+
+    @include desctop {
+      width: 100%;
+      max-width: 361px;
+      padding-top: 0;
+    }
+
+    & > p {
+      font-size: 18px;
+      line-height: 26px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  &__link {
+    font-weight: 700;
+    color: $shine-blue;
+  }
+}

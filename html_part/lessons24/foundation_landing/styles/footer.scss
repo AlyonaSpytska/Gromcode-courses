@@ -1,0 +1,177 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+
+  &__logo-mobile {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+    align-items: center;
+    border-bottom: 1px solid $more-grey-light;
+
+    & > .logo__image {
+      width: 67px;
+      height: 60px;
+      margin-right: 0;
+    }
+
+    @include desctop {
+      display: none;
+    }
+  }
+
+  &__text_mobile {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__logo-name {
+    margin: 20px 0 5px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+  
+  &__logo--desc {
+    color: $more-grey;
+  }
+
+  &__top {
+    display: flex;
+
+    @include desctop {
+      min-height: 338px;
+      padding: 35px 0 39px;
+    }
+  }
+
+  &__about {
+    display: none;
+
+    @include desctop {
+      display: block;
+      margin: 8px 126px 0 0;
+    }
+  }
+
+  &__description {
+    width: 100%;
+    max-width: 360px;
+    margin: 26px 0 25px;
+    line-height: 26px;
+    color: $more-grey;
+
+    @include desctop {
+      margin-bottom: 31px;
+    }
+  }
+
+  &__images:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__additional-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 15px 0;
+
+    @include desctop {
+      padding: 0;
+      flex-direction: row;
+    }
+  }
+
+  &__column {
+    width: 265px;
+  }
+
+  &__column {
+    width: 265px;
+
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
+
+  &__title {
+    margin: 16px 0;
+
+    @include desctop {
+      margin-top: 28px;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    list-style: none;
+  }
+
+  &__element {
+    margin-bottom: 19px;
+  }
+
+  &__item {
+    text-decoration: none;
+    color: $more-grey;
+  }
+
+  &__line {
+    display: none;
+
+    @include desctop {
+      display: block;
+      width: 100%;
+      margin: 0;
+      border: 1px solid $more-grey;
+      opacity: 0.1;
+    }
+  }
+
+  &__bottom {
+    line-height: 50px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+
+    @include desctop {
+      height: 50px;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+
+  &__link {
+    margin: 13px 0 15px;
+    font-size: 14px;
+    line-height: 22px;
+    text-decoration: none;
+    color: $more-grey;
+    
+    &:not(:last-child) {
+      margin-right: 14px;
+
+      @include desctop {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__icon {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+    &:not(:last-child) {
+      margin-right: 14px;
+      
+      @include desctop {
+        margin-right: 20px;
+      }
+    }
+  }
+}

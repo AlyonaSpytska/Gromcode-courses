@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,OAAO,EAAE,SAAS;CACnB",
+    "sources": [
+        "../html_part/lessons24/foundation_landing/styles/order.scss"
+    ],
+    "names": [],
+    "file": "order.css"
+}

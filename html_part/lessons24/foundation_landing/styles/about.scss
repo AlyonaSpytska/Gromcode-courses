@@ -1,0 +1,54 @@
+.about {
+  padding: 46px 15px;
+  background: $light-grey;
+
+  @include desctop {
+    padding: 79px 0 72px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include desctop {
+      flex-direction: row;
+    }
+  }
+
+  &__article {
+    width: 100%;
+    max-width: 290px;
+    min-height: auto;
+    font-size: 22px;
+    line-height: 32px;
+
+    @include desctop {
+      max-width: 555px;
+      min-height: 102px;
+    }
+
+    &:first-child {
+      margin-bottom: 34px;
+
+      @include desctop {
+        margin-bottom: 0;
+      }
+    }
+
+    &:not(:last-child) {
+      margin-right: 0;
+
+      @include desctop {
+        margin-right: 29px;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 8px;
+  }
+  
+  &__text {
+    margin: 0;
+  }
+}

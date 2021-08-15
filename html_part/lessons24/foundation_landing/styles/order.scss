@@ -1,0 +1,105 @@
+.order {
+  background-color: $light-grey;
+
+  &__primary {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15px;
+    align-items: center;
+
+    @include desctop {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: start;
+      padding: 73px 0;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+
+    @include desctop {
+      width: 100%;
+      max-width: 555px;
+      margin-right: 100px;
+    }
+  }
+
+  &__image {
+    display: flex;
+    flex: 1;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 270px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    margin: 40px 0 18px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -0.25px;
+
+    @include desctop {
+      text-align: left;
+      margin: 0 0 25px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 79px;
+    
+    @include desctop {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 10px;
+
+    @include desctop {
+      align-items: flex-start;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 290px;
+    min-height: 48px;
+    margin-bottom: 12px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid $super-grey-light;
+
+    @include desctop {
+      max-width: 385px;
+      height: 48px;
+      margin-right: 10px;
+      margin-bottom: 0;
+      padding: 17px 15px 18px;
+      text-align: left;
+    }
+
+    &::placeholder {
+      font-size: 18px;
+      line-height: 13px;
+      color: $main-color;
+    }
+  }
+
+  &__terms {
+    font-size: 14px;
+    line-height: 22px;
+    color: $grey;
+  }
+  
+  &__link {
+    color: $blue;
+  }
+}

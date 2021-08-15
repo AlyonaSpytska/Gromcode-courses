@@ -1,0 +1,86 @@
+.feedback {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 38px 15px 46px;
+  border-bottom: 1px solid $super-grey-light;
+
+  @include desctop {
+    padding-bottom: 69px;
+  }
+
+  &__content {
+    @include desctop {
+      width: 100%;
+      max-width: 900px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+  }
+
+  &__uptitle {
+    margin-bottom: 29px;
+    color: blue;
+  }
+
+  &__text {
+    margin-bottom: 32px;
+
+    @include desctop {
+      width: 100%;
+      max-width: 738px;
+      text-align: center;
+    }
+  }
+
+  &__client {
+    margin-bottom: 40px;
+
+    @include desctop {
+      text-align: center;
+    }
+  }
+
+  &__dots {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+
+  &__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $super-grey-light;
+
+    &:not(:last-child) {
+      margin-right: 19.5px;
+
+      @include desctop {
+        margin-right: 13.5px;
+      }
+    }
+
+    &_active {
+      background-color: $blue;
+    }
+
+    @include desctop {
+      width: 8px;
+      height: 8px;
+    }
+  }
+
+  &__img {
+    margin: 43px auto 0;
+    
+    @include desctop {
+      position: absolute;
+      right: 22px;
+      bottom: 0;
+      margin: 0;
+    }
+  }
+}

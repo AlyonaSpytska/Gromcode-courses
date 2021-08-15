@@ -1,0 +1,42 @@
+.tips {
+  padding: 48px 0 50px;
+
+  @include desctop {
+    display: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+
+    &:not(:first-child) {
+      padding-top: 40px;
+    }
+
+    &:not(:last-child) {
+      padding-bottom: 40px;
+      border-bottom: 1px solid $more-grey-light;
+    }
+  }
+
+  &__uptitle {
+    color: $green;
+  }
+
+  &__title {
+    margin: 17px 0 22px;
+  }
+
+  &__img {
+    max-width: 100%;
+    margin: 30px 0 18px;
+  }
+  
+  &__com {
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    color: $grey;
+  }
+}

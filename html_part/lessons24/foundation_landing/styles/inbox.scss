@@ -1,0 +1,132 @@
+.inbox {
+  padding: 50px 15px 48px;
+  background: $warm-light-orange;
+
+  @include desctop {
+    padding: 111px 0 101px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include desctop {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desctop {
+      margin: 30px 0 0 62px;
+    }
+
+    & > p {
+      display: none;
+
+      @include desctop {
+        display: block;
+        font-size: 14px;
+        line-height: 22px;
+        color: $grey;
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 290px;
+    min-height: 348px;
+    margin: -3px 0 32px;
+    text-align: center;
+
+    @include desctop {
+      max-width: 425px;
+      min-height: 510px;
+      margin-bottom: 17px;
+    }
+  }
+
+  &__content {
+    @include desctop {
+      width: 100%;
+      max-width: 519px;
+    }
+  }
+
+  &__part-text {
+    @include desctop {
+      width: 100%;
+      max-width: 462px;
+      margin-left: auto;
+    }
+  }
+
+  &__uptitle {
+    color: $orange;
+  }
+
+  &__title {
+    margin: 17px 0 18px;
+
+    @include desctop {
+      margin: 24px 0 30px;
+    }
+  }
+  
+  &__text {
+    margin-bottom: 64px;
+
+    @include desctop {
+      margin-bottom: 44px;
+    }
+  }
+
+  &__part-comment {
+    padding: 30px 20px;
+    background-color: $white;
+    border-bottom: 4px solid #0185d0;
+
+    @include desctop {
+      width: 100%;
+      max-width: 519px;
+      min-height: 213px;
+      margin-left: 32px;
+      padding: 29px;
+    }
+  }
+
+  &__comment {
+    margin-bottom: 26px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__client {
+    display: flex;
+  }
+  
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    margin: 5px 11px 0 0;
+  }
+
+  &__name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+  }
+  
+  &__profession {
+    font-size: 16px;
+    line-height: 22px;
+    color: grey;
+  }
+}
