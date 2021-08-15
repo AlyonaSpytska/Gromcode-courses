@@ -1,5 +1,6 @@
 .top-section {
   background-color: $peach-color;
+  margin-bottom: 39px;
 }
 
 .header {
@@ -12,8 +13,6 @@
   @include desctop {
     width: 1140px;
     height: 62px;
-    margin: 39px auto 0;
-    padding: 0;
     background-color: transparent;
   }
 
@@ -49,8 +48,8 @@
   }
 
   &__image {
-    width: 45px;
-    height: 45px;
+    width: 48px;
+    height: 48px;
     margin-right: 13px;
 
     @include desctop {
