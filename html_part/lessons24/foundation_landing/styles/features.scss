@@ -50,7 +50,7 @@
 
     &::before {
       position: absolute;
-      content: url("../images/features/Icon-point.png");
+      content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png");
       width: 24px;
       height: 24px;
       top: 1px;
@@ -88,7 +88,7 @@
     
     &--build::before {
       position: absolute;
-      content: url("../images/features/Icon_building.png");
+      content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png");
       width: 23px;
       height: 25px;
       top: 20px;
@@ -97,7 +97,7 @@
     
     &--bucket::before {
       position: absolute;
-      content: url("../images/features/Icon-bucket.png");
+      content: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png");
       width: 22px;
       height: 22px;
       top: 24px;
