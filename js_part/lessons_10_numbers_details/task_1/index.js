@@ -28,22 +28,22 @@
 // isFinite;// более новая и надо пользоваться ею
 
 
-//создадим функцию, которая каждый элемент масссива преобразует во float
-//option 1
+// создадим функцию, которая каждый элемент масссива преобразует во float
+// option 1
 // const parseArray = arr => {
 //   const result = arr.map(el => parseFloat(el));
 //   return result
 // }
 
 
-//option 2
+// option 2
 // const parseArray = arr =>
 //   arr.map(el => Number.parseFloat(el));
 
 // const elementsList = [4, 5.6, '   5.7kl', null, NaN, Infinity, undefined];
 // console.log(parseArray(elementsList));
 
-//числа хранятся в бинарном формате (как 0 и 1)
+// числа хранятся в бинарном формате (как 0 и 1)
 // 0.1 + 0.2 === 0.3//false
 // 0.1 + 0.2 //0.30000000000000004 потеря точности
 // чтоб такого избежать есть методы: Math
@@ -60,7 +60,7 @@
 // Math.pow(3, 4);//81 3 в степени 4
 // Math.sqrt(9);//3
 
-//num => [] //округления числа с помощью разных методов
+// num => [] //округления числа с помощью разных методов
 // const multiRound = num => [
 //   Math.round(num),
 //   Math.floor(num),
@@ -88,10 +88,10 @@
 // -17 по модулю = 17
 // положительные числа модулю равны сами себе
 
-//[2, -6, -78, -99] => 99
+// [2, -6, -78, -99] => 99
 
 
-//option 1
+// option 1
 // const getMaxAbsoluteNumber = arr => {
 //   if (!Array.isArray(arr)  || arr.length === 0) {
 //     return null;
@@ -106,8 +106,8 @@
 // };
 
 
-//option 2 
-//разбиваем задачу на две части
+// option 2 
+// разбиваем задачу на две части
 // 1. находим все абсолютные значения
 // 2. найдем максим из всех значение
 
@@ -120,7 +120,7 @@
 
 // }
 
-//option 3
+// option 3
 
 // const getMaxAbsoluteNumber = arr => {
 //   if (!Array.isArray(arr) || arr.length === 0) {
@@ -138,7 +138,7 @@
 
 // const elementsList2 = [3, '-4.2', '5', [-8, 2], 10];
 // console.log(getFiniteNumbers(elementsList2));
-// // result [3, 10]
+// result [3, 10]
 
 // const getFiniteNumbersV2 = arr => {
 //   return arr.filter(el => isFinite(el));

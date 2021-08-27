@@ -7,9 +7,7 @@ console.log(getParsedIntegers(elementsList2));
 
 
 
-const getParsedIntegersV2 = arr => {
-  return arr.map(el => parseInt(el));
-};
+const getParsedIntegersV2 = arr => arr.map(el => parseInt(el));
 console.log(getParsedIntegersV2([3, -4.2, 5, 10]));
 //result [3, -4, 5, 10]
 
