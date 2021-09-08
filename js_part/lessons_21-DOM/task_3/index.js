@@ -1,12 +1,12 @@
 // input - 
 // output elements
-export function getItemList () {
+export function getItemsList () {
   const elementsList = document.querySelectorAll('.technology');
   console.dir(elementsList);
   return elementsList;
 }
 
-getItemList();
+getItemsList();
 
 
 // input - 
