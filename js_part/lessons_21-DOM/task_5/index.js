@@ -1,9 +1,7 @@
 export function setTitle(text) {
-  // eslint-disable-next-line no-param-reassign
-  text = document.querySelector('.title')
-  // eslint-disable-next-line no-param-reassign
-  text.textContent = `I am a title`;
+  const getText = document.querySelector('.title')
+  getText.textContent = text;
   return text
 }
 
-setTitle()
+setTitle(`I am a title`)
