@@ -1,4 +1,7 @@
-export function getTitleElement () {
+// input - 
+// output element (title)
+
+export function getTitleElement() {
   const element = document.querySelector('.title');
   console.dir(element);
   return element;
@@ -6,10 +9,13 @@ export function getTitleElement () {
 
 getTitleElement();
 
-export function InputElement() {
+
+// input - 
+// output element (input)
+export function getInputElement() {
   const inputElem = document.querySelector('input');
   console.dir(inputElem);
   return inputElem;
 }
 
-InputElement();
+getInputElement();
