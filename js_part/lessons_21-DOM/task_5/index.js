@@ -1,7 +1,6 @@
-function setTitle(text) {
-  const getSomeText = document.querySelector('.title');
-  getSomeText.textContent(text);
+export function setTitle(text) {
+  const textVar = document.querySelector('.title');
+  textVar.textContent = text;
 }
 
-setTitle();
-export { setTitle };
+setTitle('some text');
