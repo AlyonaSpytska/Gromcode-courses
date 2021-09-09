@@ -1,5 +1,5 @@
-export const clearList = () => {
-  const cleanList = document.querySelector('.categories');
-  cleanList.innerHTML = ``;
+const clearList = () => {
+  // eslint-disable-next-line no-multi-assign
+  const cleanList = (document.querySelector('.categories').innerHTML = ``);
 };
 clearList();
