@@ -7,3 +7,4 @@ export const finishForm = () => {
   formElem.prepend(getInput);
 }
 
+finishForm();
