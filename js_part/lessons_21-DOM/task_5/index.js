@@ -3,4 +3,4 @@ export function setTitle(text) {
   textVar.textContent = text;
 }
 
-setTitle('some text');
+
