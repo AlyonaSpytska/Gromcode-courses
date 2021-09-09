@@ -1,6 +1,6 @@
-function setButton (buttonText = 'button text') {
-  const firstElem = document.querySelector('body');
-console.dir(firstElem);
+export function setButton (buttonText) {
+  const findBody = document.querySelector('body');
+  findBody.innerHTML = `<button> ${buttonText} </button>`;
 }
 
-setButton();
+// setButton('button text');
