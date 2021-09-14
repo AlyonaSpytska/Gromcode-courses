@@ -1,4 +1,4 @@
-// alfo
+// algo
 // 3 сектора .sector
 // inner sector строки -ряды sector__line
 // каждый ряд состояит из количества сидений
@@ -73,9 +73,9 @@ const onSeatSelect = event => {
   }
 
   // если это все же сиденье:
-  const seatNumber = event.target.dataset.seatNumber;
-  const lineNumber = event.target.closest('.sector__line').dataset.lineNumber;
-  const sectorNumber = event.target.closest('.sector').dataset.sectorNumber;
+  const {seatNumber} = event.target.dataset;
+  const {lineNumber} = event.target.closest('.sector__line').dataset;
+  const {sectorNumber} = event.target.closest('.sector').dataset;
 
   // получить элемент через который получаем данные
 
