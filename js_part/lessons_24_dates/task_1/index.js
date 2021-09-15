@@ -3,7 +3,7 @@
 const weekOfDays = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'St'];
 
 // этот метод будет принимаьб дату и количество дней вторым параметром, которые нужно прибавить
-const dayOfWeek = (date, days) => {
+export const dayOfWeek = (date, days) => {
   // нужно узнать какая дата уже есть ->
   const day = new Date(date).getDate();
   const dateInFuture = new Date(date).setDate(day + days); // установить новую дату через метод setDate
