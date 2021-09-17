@@ -123,6 +123,7 @@ const renderTasks = taskList => {
   const listItemsElems = taskList
     .sort((a, b) => a.done - b.done)
     .map(({ text, done, id }) => {
+      console.log(text, done, id);
       const listItemElem = document.createElement('li');
       listItemElem.dataset.id = id;
       listItemElem.classList.add('list__item');
