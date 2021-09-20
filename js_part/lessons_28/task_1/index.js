@@ -1,5 +1,6 @@
 // func calc 
 // использовать методы, которые изменяют начальное значение
+// методы объекта возвращают ссылку на сам объект
 
 export const calc = initialValue => {
   let result = initialValue;
