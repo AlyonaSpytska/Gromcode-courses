@@ -1,32 +1,32 @@
 // func calc 
 // использовать методы, которые изменяют начальное значение
 
-const calc = initialValue => {
+export const calc = initialValue => {
   let result = initialValue;
   const calculator = {
-    add(value) {
-      result += value
-      return this
+    add(number) {
+      result += number;
+      return this;
     },
 
-    mult(value) {
-      result *= value
-      return this
+    mult(number) {
+      result *= number;
+      return this;
     },
 
-     substract(value) {
-      result -= value
-      return this
+    substract(number) {
+      result -= number;
+      return this;
     },
 
-     div(value) {
-      result /= value
-      return this
+    div(number) {
+      result /= number;
+      return this;
     },
 
     result() {
       return result;
-    }
+    },
   };
   return calculator;
 }
