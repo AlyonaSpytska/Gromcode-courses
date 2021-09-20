@@ -14,7 +14,7 @@ export const calc = initialValue => {
       return this;
     },
 
-    substract(number) {
+    subtract(number) {
       result -= number;
       return this;
     },
@@ -31,5 +31,8 @@ export const calc = initialValue => {
   return calculator;
 }
 
-const result = calc(3).add(2).mult(4).div(10).substract(5).result();
+const result = calc(3).add(2).mult(4).div(10).subtract(5).result();
 console.log(result);
+
+const result2 = calc(3).mult(4).subtract(5).add(2).div(10).result();
+console.log(result2);
