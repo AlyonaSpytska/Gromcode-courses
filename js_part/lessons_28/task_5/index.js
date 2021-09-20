@@ -1,7 +1,7 @@
 // input data
 // output obj with methods
 
-const shmoment = data => {
+export const shmoment = data => {
   const momentData = new Date(data);
   // console.log(momentData);
 
