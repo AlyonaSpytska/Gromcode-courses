@@ -9,9 +9,9 @@ export const shmoment = data => {
     add(text, number) {
       if (text === 'years') momentData.setFullYear(momentData.getFullYear() + number);
       
-      if (text === 'months') momentData.setMont(momentData.getMonth() + number);
+      if (text === 'months') momentData.setMonth(momentData.getMonth() + number);
       
-      if (text === 'days') momentData.setDate(momentData.getDay() + number);
+      if (text === 'days') momentData.setDate(momentData.getDate() + number);
       
       if (text === 'hours') momentData.setHours(momentData.getHours() + number);
 
@@ -27,9 +27,9 @@ export const shmoment = data => {
     subtract(text, number) {
       if (text === 'years') momentData.setFullYear(momentData.getFullYear() - number);
       
-      if (text === 'months') momentData.setMont(momentData.getMonth() - number);
+      if (text === 'months') momentData.setMonth(momentData.getMonth() - number);
       
-      if (text === 'days') momentData.setDate(momentData.getDay() - number);
+      if (text === 'days') momentData.setDate(momentData.getDate() - number);
       
       if (text === 'hours') momentData.setHours(momentData.getHours() - number);
 
