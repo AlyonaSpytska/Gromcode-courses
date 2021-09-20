@@ -28,7 +28,7 @@ const tree = {
   ]
 }
 
-const markFavorites = (tree, favorites) => {
+export const markFavorites = (tree, favorites) => {
   const isFavorite = favorites.includes(tree.id);
 
   return {
@@ -39,7 +39,7 @@ const markFavorites = (tree, favorites) => {
     // суть: внутри ф-ции вызываем ее же
     nodes: tree.nodes.map(childNode => markFavorites(childNode, favorites)),
   };
-}
+};
 
 const result = markFavorites(tree, favorites); 
 console.log(result);
