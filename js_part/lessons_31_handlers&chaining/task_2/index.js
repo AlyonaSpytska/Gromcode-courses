@@ -24,7 +24,7 @@
 //   return createPromise;
 // };
 
-const asyncCalculator = num =>
+export const asyncCalculator = num =>
   new Promise((resolve) => {
     setTimeout(() => {
       console.log(`Initial value: ${num}`);
