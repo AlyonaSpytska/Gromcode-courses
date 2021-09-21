@@ -23,4 +23,4 @@ const imgSrc =
 
 const result = addImage(imgSrc);
 
-console.log(imgSrc);
+console.log(result);
