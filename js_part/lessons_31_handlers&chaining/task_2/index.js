@@ -37,7 +37,7 @@ export const asyncCalculator = num =>
           const result = value * value;
           console.log(`Square value: ${result}`);
           resolve(result);
-        }, 500);
+        }, 1000);
       }),
   )
   .then(value => {
