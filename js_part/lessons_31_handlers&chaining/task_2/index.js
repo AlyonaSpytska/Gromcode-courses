@@ -37,7 +37,7 @@ export const asyncCalculator = num =>
           const result = value * value;
           console.log(`Square value: ${result}`);
           resolve(result);
-        }, 1000);
+        }, 500);
       }),
   )
   .then(value => {
@@ -47,5 +47,5 @@ export const asyncCalculator = num =>
   })
 
 
-  asyncCalculator(5)
-  .then(value => console.log(value))
+  // asyncCalculator(5)
+  // .then(value => console.log(value))
