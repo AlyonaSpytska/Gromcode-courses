@@ -29,24 +29,26 @@
 
 // дай значение с задержкой, передаем value и delay
 const getValueWithDelay = (value, delay) => new Promise(resolve => {
-    setTimeout(() => {
-      console.log(value);
-      resolve(value);
-    }, delay);
-  });
+  setTimeout(() => {
+    console.log(value);
+    resolve(value);
+  }, delay);
+})
 
 const asyncNum1 = getValueWithDelay(56, 1000);
 const asyncNum2 = getValueWithDelay(4, 2000);
-const asyncNum3 = getValueWithDelay(10, 3000);
+const asyncNum3 = getValueWithDelay(undefined, 3000);
 
 const getSum = numbers => 
-  numbers.reduce((acc, num) => acc + num, 0);
+  numbers
+  .filter(value => !isNaN(value))
+  .reduce((acc, num) => acc + Number(num), 0);
 
 // eslint-disable-next-line arrow-body-style
 const asyncSum = (...asyncNumbers) => {
-  return Promise.all(asyncNumbers).then(numbers => {
-    getSum(numbers);
-  });
+  return Promise.all(asyncNumbers)
+    .then(numbers => getSum(numbers))
+    .catch(() => Promise.reject(new Error(`Can't calculate`)))
 }
 
 asyncSum(asyncNum1, asyncNum2, asyncNum3).then(result => console.log(result));
