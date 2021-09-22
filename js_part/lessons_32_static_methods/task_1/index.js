@@ -45,7 +45,7 @@ const getSum = numbers =>
   .reduce((acc, num) => acc + Number(num), 0);
 
 // eslint-disable-next-line arrow-body-style
-const asyncSum = (...asyncNumbers) => {
+export const asyncSum = (...asyncNumbers) => {
   return Promise.all(asyncNumbers)
     .then(numbers => getSum(numbers))
     .catch(() => Promise.reject(new Error(`Can't calculate`)))
