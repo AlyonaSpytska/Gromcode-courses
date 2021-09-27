@@ -5,13 +5,13 @@ function getUsersList() {
 }
 
 export function getUserById(userId) {
-  return fetch(`${baseUrl}/${userId}`).then(response =>
-    response.json(),
+  return fetch(`${'https://6151c2184a5f22001701d3f3.mockapi.io/api/v1/users'}/${userId}`).then(
+    response => response.json(),
   );
 }
 
 export function createUser(userData) {
-  return fetch(baseUrl, {
+  return fetch('https://6151c2184a5f22001701d3f3.mockapi.io/api/v1/users', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
@@ -21,13 +21,13 @@ export function createUser(userData) {
 }
 
 export function deleteUser(userId) {
-  return fetch(`${baseUrl}/${userId}`, {
+  return fetch(`${'https://6151c2184a5f22001701d3f3.mockapi.io/api/v1/users'}/${userId}`, {
     method: 'DELETE',
   });
 }
 
 export function updateUser(userId, userData) {
-  return fetch(`${baseUrl}/${userId}`, {
+  return fetch(`${'https://6151c2184a5f22001701d3f3.mockapi.io/api/v1/users'}/${userId}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
