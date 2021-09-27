@@ -1,6 +1,6 @@
 const baseUrl = 'https://6151c2184a5f22001701d3f3.mockapi.io/api/v1/users';
 
-function getUsersList() {
+export function getUsersList() {
   return fetch(baseUrl).then(response => response.json());
 }
 
@@ -35,9 +35,9 @@ export function updateUser(userId, userData) {
 }
 
 // examples
-// getUsersList().then(users => {
-//   console.log(users); // array of the user objects [{'id':'1', 'firstName':'Grayce' ... }, {'id':'2', 'firstName':'Ara' ... }, ...]
-// });
+getUsersList().then(users => {
+  console.log(users); // array of the user objects [{'id':'1', 'firstName':'Grayce' ... }, {'id':'2', 'firstName':'Ara' ... }, ...]
+});
 
 // getUserById('2').then(userData => {
 //   console.log(userData); // {'id':'2', 'firstName':'Ara' ... }
