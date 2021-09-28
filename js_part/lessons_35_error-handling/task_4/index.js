@@ -1,6 +1,6 @@
-export const parseUser = text => {
+export const parseUser = string => {
   try {
-    return JSON.parse(text);
+    return JSON.parse(string);
   } catch (error) {
     return null;
   }
