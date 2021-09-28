@@ -25,12 +25,12 @@ const getUser = async userId => {
     }
     const userData = await response.json();
     return userData;
-  } catch (err) {
+  } catch (error) {
     // обработать ошибку и закинуть дальше ->
     throw new Error('Failed to fetch user')
   }
 };
 
 getUser('facebook')
-.then(userData => console.log(userData))
+  .then(userData => console.log(userData))
   .catch(err => alert(err.message))
