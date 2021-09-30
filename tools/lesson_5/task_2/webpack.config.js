@@ -1,3 +1,3 @@
 module.exports = {
-  entry: './src/profile/index.js'
-}
+  entry: "./src/profile/index.js",
+};
