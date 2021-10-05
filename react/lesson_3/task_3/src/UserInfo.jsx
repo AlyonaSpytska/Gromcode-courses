@@ -1,5 +1,5 @@
 import React from 'react';
-import Avatar from './UserAvatar'
+import Avatar from './Avatar'
 
 
 const UserInfo = (props) => {
