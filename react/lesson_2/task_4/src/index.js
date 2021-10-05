@@ -5,7 +5,7 @@ import "./list.css";
 const rootElem = document.querySelector("#root");
 
 const element = (
-  <div>
+  <>
     <h1 className="title">Todo List</h1>
     <main className="todo-list">
       <div className="actions">
@@ -14,7 +14,7 @@ const element = (
       </div>
       <ul className="list"></ul>
     </main>
-  </div>
+  </>
 );
 
 ReactDOM.render(element, rootElem);
