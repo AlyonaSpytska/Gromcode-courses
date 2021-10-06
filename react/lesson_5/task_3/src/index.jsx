@@ -1,9 +1,8 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import "./index.scss";
-import App from './App'
+import Counter from "./Counter";
 
-const rootElem = document.querySelector('#root')
+const rootElem = document.querySelector("#root");
 
-ReactDOM.render(<App />, rootElem)
-
+ReactDOM.render(<Counter />, rootElem);
