@@ -1,9 +1,9 @@
 import ReactDOM from "react-dom";
 import React from "react";
 import "./index.scss";
-import App from './App'
+import Colors from "./Colors";
 
 const rootElem = document.querySelector('#root')
 
-ReactDOM.render(<App />, rootElem)
+ReactDOM.render(<Colors />, rootElem);
 
