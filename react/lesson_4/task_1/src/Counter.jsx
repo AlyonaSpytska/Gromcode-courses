@@ -17,7 +17,6 @@ class Counter extends Component {
         // object:
         counter: this.state.counter + 1,
       });
-      counter += 1;
     }, props.interval);
   }
 
