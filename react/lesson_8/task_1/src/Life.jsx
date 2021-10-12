@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 class Life extends React.Component {
   constructor(props) {
@@ -11,16 +11,22 @@ class Life extends React.Component {
   }
 
   componentWillUnmount() {
-    console.log("componentWillUnmount(): cleanup before DOM related to component will be removed");
+    console.log(
+      "componentWillUnmount(): cleanup before DOM related to component will be removed"
+    );
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log("shouldComponentUpdate(nextProps, nextState):decide to render or not to render");
+    console.log(
+      "shouldComponentUpdate(nextProps, nextState): decide to render or not to render"
+    );
     return nextProps.number % 2;
   }
 
   componentDidUndate(prevProps, prevState) {
-    console.log("componentDidUndate(prevProps, prevState) some updates based on new props");
+    console.log(
+      "componentDidUpdate(prevProps, prevState): some updates based on new props"
+    );
   }
 
   render() {
