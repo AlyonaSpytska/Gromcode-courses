@@ -23,7 +23,7 @@ class Life extends React.Component {
     return true;
   }
 
-  componentDidUndate(prevProps, prevState) {
+  componentDidUpdate() {
     console.log(
       "componentDidUpdate(prevProps, prevState): some updates based on new props"
     );
