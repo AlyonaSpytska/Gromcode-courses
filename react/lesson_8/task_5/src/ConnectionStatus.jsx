@@ -19,8 +19,8 @@ class ConnectionStatus extends React.Component {
     window.removeEventListener("online", this.handleNetworkChange);
   }
 
-  handleNetworkChange = () => {
-    this.setState({ networkStatus: window.navigator.onLine });
+  handleNetworkChange = (event) => {
+    this.setState({ networkStatus: event.target.navigator.onLine });
   };
 
   render() {
