@@ -1,21 +1,22 @@
 import React from "react";
 
 class UserForm extends React.Component {
-  state = {
-    name: "",
-    student: "",
-    occupation: "",
-    about: "",
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "",
+      student: "",
+      occupation: "",
+      about: "",
+    };
+  }
   // можно сделать 1 обработчик
   // получает ссылку на инпут и можно правильным образом сохранять инфу с полей
 
   handleChange = event => {
     const { name, value, checked, type } = event.target;
     //for checkbox choose athor type
-    const val = type === 'checkbox'
-    ? checked
-    : value;
+    const val = type === "checkbox" ? checked : value;
 
     this.setState({
       [name]: val,
@@ -24,7 +25,7 @@ class UserForm extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    console.log(this.state);
+    this.props.onSubmit(this.state);
   };
 
   render() {
@@ -69,8 +70,8 @@ class UserForm extends React.Component {
           >
             <option value="london">London</option>
             <option value="new-york">New York</option>
-            <option value="coconut">Sidney</option>
-            <option value="mango">Berlin</option>
+            <option value="sidney">Sidney</option>
+            <option value="berlin">Berlin</option>
           </select>
         </div>
         <div className="form-control">
