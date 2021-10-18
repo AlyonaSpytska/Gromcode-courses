@@ -24,9 +24,9 @@ class UsersList extends React.Component {
     return (
       <div>
         <Filter
-          sum={filterNameList.length}
-          onNameChange={this.handleNameChange}
-          filtration={value}
+          count={filterNameList.length}
+          onChange={this.handleNameChange}
+          filterText={value}
         />
         <ul className="users">
           {filterNameList.map(user => (

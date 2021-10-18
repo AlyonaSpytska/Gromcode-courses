@@ -1,13 +1,13 @@
 import React from "react";
 
-const Filter = ({ sum, onNameChange, filtration }) => (
+const Filter = ({ count, onChange, filterText }) => (
   <div className="filter">
-    <span className="filter__count">{sum}</span>
+    <span className="filter__count">{count}</span>
     <input
       type="text"
       className="filter__input"
-      onChange={onNameChange}
-      value={filtration}
+      onChange={onChange}
+      value={filterText}
     />
   </div>
 );
