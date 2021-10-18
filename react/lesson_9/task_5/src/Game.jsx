@@ -38,13 +38,31 @@ const Game = () => {
         setXIsNext(!xIsNext)
     }
 
+    const startNewGame = () => {
+      return (
+        <button
+          className="btn__start"
+          onClick={() => setBoard(Array(9).fill(null))}
+        >
+          {" "}
+          Очистить поле{" "}
+        </button>
+      );
+    };
+
 
 
     return (
-        <div className="wrapper">
-            <Board squares={board} click={handleClick} />
-        </div>
-    )
+      <div className="wrapper">
+        {startNewGame()}
+        <Board squares={board} click={handleClick} />
+        <p className="game-info">
+          {winner
+            ? "Победитель " + winner
+            : "Сейчас ходит " + (xIsNext ? "X" : "O")}
+        </p>
+      </div>
+    );
 }
 
 export default Game

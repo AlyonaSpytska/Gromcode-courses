@@ -45,6 +45,29 @@ body {
 
   &:hover {
     background-color: #c5c0c0fa;
-    transition: background-color .3s ease;
+    transition: background-color 0.3s ease;
   }
+
+  &__start {
+    width: 200px;
+    height: 35px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    background: #222222;
+    border: 1px solid white;
+
+    &:hover {
+      background: #fff;
+      color: #222222;
+      transition: 0.3s all ease;
+    }
+  }
+}
+
+.game-info {
+  margin-top: 25px;
+  font-size: 36px;
+  color: white;
 }
