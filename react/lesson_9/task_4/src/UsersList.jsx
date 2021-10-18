@@ -3,21 +3,35 @@ import User from "./User.jsx";
 import Filter from "./Filter.jsx";
 
 class UsersList extends React.Component {
+  state = {
+    value: "",
+  };
+
+  handleNameChange = event => {
+    this.setState({
+      value: event.target.value,
+    });
+  };
 
   render() {
+    const { users } = this.props;
+    const { value } = this.state;
+    
+    
+    const filterNameList = this.state.value === ''
+    ? users
+    : users.filter(user => user.name.toLowerCase().includes(value.toLowerCase()))
     return (
       <div>
-        <Filter />
-        <ul class="users">
-          <li class="user">
-            <span class="user__name">Tad</span>
-            <span class="user__age">18</span>
-          </li>
-
-          <li class="user">
-            <span class="user__name">Anna</span>
-            <span class="user__age">45</span>
-          </li>
+        <Filter
+          sum={filterNameList.length}
+          onNameChange={this.handleNameChange}
+          filtration={value}
+        />
+        <ul className="users">
+          {filterNameList.map(user => (
+            <User key={user.id} {...user} />
+          ))}
         </ul>
       </div>
     );
