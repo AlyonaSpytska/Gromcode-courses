@@ -28,11 +28,8 @@ class Page extends React.Component {
           {`Hello, ${userData.firstName} ${userData.lastName}`}
         </h1>
         <main className="content">
-          <ShoppingCart 
-          userData={userData} />
-          <Profile 
-          userData={userData} 
-          handleChange={this.handleChange} />
+          <ShoppingCart userName={userData.firstName} />
+          <Profile userData={userData} handleChange={this.handleChange} />
         </main>
       </div>
     );
