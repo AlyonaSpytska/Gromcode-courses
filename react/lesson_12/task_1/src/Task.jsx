@@ -1,21 +1,37 @@
-import React from 'react';
-import classNames from 'classnames';
+import React from "react";
+import classNames from "classnames";
 import PropTypes from "prop-types";
 
-
-const Task = ({ done, text, onChange, onDelete, id }) => {
+const Task = ({ id, done, text, onChange, onDelete }) => {
+  const listItemClasses = classNames("list-item", { "list-item_done": done });
   return (
-    <li className={classNames("list-item", { "list-item_done": done })}>
+    <li className={listItemClasses}>
       <input
-        className="list-item__checkbox"
         type="checkbox"
+        className="list-item__checkbox"
         defaultChecked={done}
         onChange={() => onChange(id)}
       />
       <span className="list-item__text">{text}</span>
-      <button className="list-item__delete-btn" onClick={() => onDelete(id)}></button>
+      <button
+        className="list-item__delete-btn"
+        onClick={() => onDelete(id)}
+      ></button>
     </li>
   );
 };
 
-export default Task
+Task.propTypes = {
+  id: PropTypes.string.isRequired,
+  done: PropTypes.bool,
+  text: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  onDelete: PropTypes.func.isRequired,
+};
+
+Task.defaultProps = {
+  done: false,
+  text: "",
+};
+
+export default Task;
