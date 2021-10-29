@@ -5,10 +5,10 @@ import User from "./User.jsx";
 
 const App = () => (
   <div className="page">
-    <Router>
+    <Router>/----------
       <div className="page__content">
         <h1>
-          <Link to="/">Users</Link>{" "}
+          <Link to="/">Users</Link>
         </h1>
         <ul className="navigation">
           <li className="navigation__item">
