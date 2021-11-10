@@ -25,9 +25,9 @@ const counterReducer = (state = 0, action) => {
 // create redux store
 export const store = createStore(counterReducer);
 
-store.dispatch(increment());
-store.dispatch(increment());
-store.dispatch(increment());
-store.dispatch(decrement());
+// store.dispatch(increment());
+// store.dispatch(increment());
+// store.dispatch(increment());
+// store.dispatch(decrement());
 // console.log(store.getState()); -> value = 0
-console.log(store.getState());
+// console.log(store.getState());
