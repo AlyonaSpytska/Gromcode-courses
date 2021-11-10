@@ -4,7 +4,7 @@ const initialState = {
   usersList: [],
 };
 
-export const manageUsersList = (state = initialState, action) => {
+export const usersReducer = (state = initialState, action) => {
   switch (action.type) {
     case USERCREATE:
       return {
