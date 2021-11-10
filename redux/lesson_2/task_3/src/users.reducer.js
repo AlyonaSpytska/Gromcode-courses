@@ -1,4 +1,4 @@
-import { USERCREATE, USERDELETE } from "./users.actions.js";
+import { ADDUSER, DELETEUSER } from "./users.actions.js";
 
 const initialState = {
   usersList: [],
@@ -6,12 +6,12 @@ const initialState = {
 
 export const usersReducer = (state = initialState, action) => {
   switch (action.type) {
-    case USERCREATE:
+    case ADDUSER:
       return {
         ...state,
         usersList: [...state.usersList, action.userData],
       };
-    case USERDELETE:
+    case DELETEUSER:
       return {
         ...state,
         usersList: state.usersList.filter(user => user.id !== action.id),
