@@ -15,3 +15,4 @@ store.dispatch(addUser({ id: 2, name: "Bob" }));
 
 store.dispatch(deleteUser(2));
 store.dispatch(updateUser(1, {name: 'Sara'}));
+store.dispatch(updateUser(1, { name: "Bob", age: 32 }));
