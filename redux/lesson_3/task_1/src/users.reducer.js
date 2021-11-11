@@ -34,7 +34,6 @@ export const usersReducer = (state = initialState, action) => {
 
       return {
         ...state,
-        userId,
         usersList: newList,
       };
     }
