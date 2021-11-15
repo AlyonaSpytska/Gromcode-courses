@@ -1,25 +1,15 @@
 import { SET_USER, REMOVE_USER} from "./user.actions";
 
-const initialState = {
-  usersList: [],
-};
-
-export const userReducer = (state = initialState, action) => {
+export const userReducer = (state = null, action) => {
   switch (action.type) {
     case SET_USER: {
-      return {
-        ...state,
-        usersList: state.usersList.concat(action.payload.userData),
+      return { 
+        ...state, 
+        ...action.payload.userData 
       };
     }
     case REMOVE_USER: {
-      const newList = state.usersList.filter(
-        user => user.id !== action.payload.userId
-      );
-      return {
-        ...state,
-        usersList: newList,
-      };
+      return null;
     }
     default:
       return state;
