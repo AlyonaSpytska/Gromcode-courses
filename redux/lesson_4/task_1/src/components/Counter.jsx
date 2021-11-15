@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { increment, decrement, reset } from "../counter.actions";
+// option 1
+// import { increment, decrement, reset } from "../counter.actions";
+
+//option 2
+import * as counterActions from "../counter.actions";
 
 const Counter = ({ counter, increment, decrement, reset }) => {
   return (
@@ -24,12 +28,24 @@ const mapState = state => {
   };
 };
 
-const mapDispatch = dispatch => {
-  return {
-    increment: () => dispatch(increment()),
-    decrement: () => dispatch(decrement()),
-    reset: () => dispatch(reset()),
-  };
+// option 1
+
+// const mapDispatch = dispatch => {
+//   return {
+//     increment: () => dispatch(increment()),
+//     decrement: () => dispatch(decrement()),
+//     reset: () => dispatch(reset()),
+//   };
+// };
+
+
+
+// option 2
+
+const mapDispatch = {
+  increment: counterActions.increment,
+  decrement: counterActions.decrement,
+  reset: counterActions.reset,
 };
 
 const connector = connect(mapState, mapDispatch); // HOK (higher order component) -> funct input component -> output component
