@@ -9,12 +9,12 @@ export const cartReducer = (state = initialState, action) => {
     case ADD_PRODUCT: {
       return {
         ...state,
-        products: state.products.concat(action.productData),
+        products: [...state.products, action.productData],
       };
     }
     case REMOVE_PRODUCT: {
       const newList = state.products.filter(
-        user => user.id !== action.payload.productId
+        user => user.id !== action.productId
       );
       return {
         ...state,
