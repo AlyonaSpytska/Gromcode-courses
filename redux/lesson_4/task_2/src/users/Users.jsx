@@ -25,7 +25,7 @@ class Users extends React.Component {
             <li key={user.id} className="users__list-item">
               <span>{user.name}</span>
               <button
-                class="users__delete-btn"
+                className="users__delete-btn"
                 onClick={() => deleteUser(user.id)}
               >
                 +
